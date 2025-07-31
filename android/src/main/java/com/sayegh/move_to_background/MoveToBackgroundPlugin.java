@@ -21,13 +21,13 @@ public class MoveToBackgroundPlugin implements FlutterPlugin, MethodCallHandler,
   private static Activity activity;
 
   /** Plugin registration. */
-  public static void registerWith(Registrar registrar) {
-    if (registrar.activity() != null) {
-      MoveToBackgroundPlugin.activity = registrar.activity();
-    }
-    MoveToBackgroundPlugin plugin = new MoveToBackgroundPlugin();
-    plugin.setupChannel(registrar.messenger(), registrar.context());
-  }
+  // public static void registerWith(Registrar registrar) {
+  //   if (registrar.activity() != null) {
+  //     MoveToBackgroundPlugin.activity = registrar.activity();
+  //   }
+  //   MoveToBackgroundPlugin plugin = new MoveToBackgroundPlugin();
+  //   plugin.setupChannel(registrar.messenger(), registrar.context());
+  // }
 
   @Override
   @SuppressWarnings("deprecation")
